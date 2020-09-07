@@ -1,4 +1,4 @@
-# flannel-cni [![Docker Repository on Quay](https://quay.io/repository/poseidon/flannel-cni/status "Docker Repository on Quay")](https://quay.io/repository/poseidon/flannel-cni)
+# flannel-cni [![Quay](https://img.shields.io/badge/container-quay-green)](https://quay.io/repository/poseidon/flannel-cni)
 
 `flannel-cni` provides a container image that installs a CNI config and CNI binaries on Kubernetes nodes. Ideal for container-optimized OSes like Fedora CoreOS and Flatcar Linux.
 
