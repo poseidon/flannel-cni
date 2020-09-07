@@ -1,5 +1,5 @@
 VERSION=$(shell git describe --tags --match=v* --always --dirty)
-CNI_VERSION=v0.8.6
+CNI_VERSION=v0.8.7
 
 LOCAL_REPO?=poseidon/flannel-cni
 IMAGE_REPO?=quay.io/poseidon/flannel-cni
