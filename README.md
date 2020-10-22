@@ -12,7 +12,7 @@ Add `flannel-cni` as an init container to a [flannel](https://github.com/coreos/
 ```yaml
 initContainers:
   - name: install-cni
-    image: quay.io/poseidon/flannel-cni:v0.4.0
+    image: quay.io/poseidon/flannel-cni:v0.4.1
     command: ["/install-cni.sh"]
     env:
       - name: CNI_NETWORK_CONFIG
