@@ -4,7 +4,9 @@ Notable changes between versions
 
 ## Latest
 
-* Update CNI plugins from v0.8.7 to v0.9.0 ([#4](https://github.com/poseidon/flannel-cni/pull/4))
+## v0.4.2
+
+* Update CNI plugins from v0.8.7 to v0.9.1 ([#4](https://github.com/poseidon/flannel-cni/pull/4), [#5](https://github.com/poseidon/flannel-cni/pull/5))
 
 ## v0.4.1
 
