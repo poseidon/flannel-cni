@@ -1,10 +1,10 @@
-FROM docker.io/alpine:3.13 AS builder
+FROM docker.io/alpine:3.14.0 AS builder
 ARG ARCH
 ARG CNI_VERSION
 COPY scripts /scripts
 RUN /scripts/fetch-cni.sh
 
-FROM docker.io/alpine:3.13
+FROM docker.io/alpine:3.14.0
 LABEL maintainer="Dalton Hubble <dghubble@gmail.com>"
 COPY --from=builder /bin/flannel /opt/cni/bin/flannel
 COPY --from=builder /bin/loopback /opt/cni/bin/loopback
