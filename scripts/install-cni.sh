@@ -10,6 +10,7 @@ set -eu;
 # Variables:
 # CNI_CONF_NAME - CNI config filename
 # CNI_NETWORK_CONFIG - CNI configuration
+# SLEEP - optionally sleep once done
 
 CNI_BIN_DIR=${CNI_BIN_DIR:-/opt/cni/bin}
 
@@ -36,3 +37,7 @@ else
   echo "Skip writing CNI config"
 fi;
 
+if [ "$SLEEP" == "true" ]; then
+  echo "Sleep mode"
+  while true; do sleep 3600; done;
+fi
