@@ -1,10 +1,10 @@
-FROM docker.io/alpine:3.23.2 AS builder
+FROM docker.io/alpine:3.23.3 AS builder
 ARG ARCH
 ARG CNI_VERSION
 COPY scripts /scripts
 RUN /scripts/fetch-cni.sh
 
-FROM docker.io/alpine:3.23.2
+FROM docker.io/alpine:3.23.3
 LABEL maintainer="Dalton Hubble <dghubble@gmail.com>"
 LABEL org.opencontainers.image.title="flannel-cni",
 LABEL org.opencontainers.image.source="https://github.com/poseidon/flannel-cni"
